@@ -1,0 +1,41 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint:recommended",
+      "tslint-react"
+  ],
+  "jsRules": {},
+  "rules": {
+    "interface-name": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "member-access": [false],
+    "ordered-imports": [false],
+    "semicolon": [false, "never"],
+    "no-console": [false],
+    "no-var-requires": true,
+    "jsx-no-multiline-js": [false]
+  },
+  "rulesDirectory": []
+}
+
+// {
+//   "extends": ["airbnb", "prettier"],
+//   "plugins": ["react", "jsx-a11y", "import"],
+//   "rules": {
+//     "semi": ["error", "never"],
+//     "react/prefer-stateless-function": "off",
+//     "react/prop-types": "off",
+//     "react/no-danger": "off",
+//     "jsx-a11y/anchor-is-valid": [ "error", {
+//       "components": [ "Link" ],
+//       "specialLink": [ "hrefLeft", "hrefRight", "to" ],
+//       "aspects": [ "noHref", "invalidHref", "preferButton" ]
+//     }]
+//   },
+//   "settings": {
+//     "import/core-modules": []
+//   },
+//   "env": {
+//     "browser": true
+//   }
+// }
