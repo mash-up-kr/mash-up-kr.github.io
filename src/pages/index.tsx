@@ -1,6 +1,7 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
+import styled from 'styled-components'
 import config from '../../data/SiteConfig'
 
 interface Props {
@@ -17,10 +18,10 @@ class Index extends React.Component<Props> {
   render() {
     const { data } = this.props
     return (
-      <div>
+      <Wrapper>
         <Helmet title={config.siteTitle} />
         {data.site.siteMetadata.title}
-      </div>
+      </Wrapper>
     )
   }
 }
@@ -35,4 +36,9 @@ export const query = graphql`
       }
     }
   }
+`
+
+const Wrapper = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
 `
