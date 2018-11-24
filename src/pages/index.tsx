@@ -1,7 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
+import GlobalStyle from '../styles/global'
+import theme from '../styles/theme'
 import config from '../../data/SiteConfig'
 
 interface Props {
@@ -11,17 +13,20 @@ interface Props {
         title: string;
       };
     };
-  }
+  };
 }
 
 class Index extends React.Component<Props> {
   render() {
     const { data } = this.props
     return (
-      <Wrapper>
-        <Helmet title={config.siteTitle} />
-        {data.site.siteMetadata.title}
-      </Wrapper>
+      <ThemeProvider theme={theme}>
+        <Wrapper>
+          <Helmet title={config.siteTitle} />
+          <GlobalStyle />
+          {data.site.siteMetadata.title}
+        </Wrapper>
+      </ThemeProvider>
     )
   }
 }
