@@ -16,7 +16,13 @@ module.exports = {
       url: '',
     }
   ],
-  copyright: 'Copyright © 2017. Mash Up', // Copyright string for the footer of the website and RSS feed.
-  themeColor: '#c62828', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#e0e0e0' // Used for setting manifest background color.
-};
+  navItems: [
+    { label: 'MASH-UP', title: '메쉬업', url: '#mash-up' },
+    { label: 'VISION', title: '목표', url: '#vision' },
+    { label: 'ACTIVITY', title: '활동', url: '#activity' },
+    { label: 'INTERVIEW', title: '인터뷰', url: '#interview' },
+    { label: 'CONTACT', title: '연락처', url: '#contact' },
+
+  ],
+  copyright: 'Copyright © 2018. Mash Up', // Copyright string for the footer of the website and RSS feed.
+}

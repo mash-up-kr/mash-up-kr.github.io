@@ -1,6 +1,6 @@
 interface Theme {
-  primaryColor: string;
-  secondaryColor: string;
+  primaryColor: string
+  secondaryColor: string
 }
 
 const theme: Theme = {

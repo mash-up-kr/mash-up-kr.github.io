@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.26 69.5">
+    <defs>
+        <style>
+            .cls-1{opacity:.25}.cls-2{fill:none;stroke:#fc5e5d;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="vision_icon" class="cls-1">
+        <path id="사각형_41" d="M0 0h7.824v22.267H0z" class="cls-2" data-name="사각형 41" transform="translate(1.5 45.633)"/>
+        <path id="사각형_42" d="M0 0h7.824v28.385H0z" class="cls-2" data-name="사각형 42" transform="translate(16.646 39.615)"/>
+        <path id="사각형_43" d="M0 0h7.824v34.805H0z" class="cls-2" data-name="사각형 43" transform="translate(31.791 33.195)"/>
+        <path id="사각형_44" d="M0 0h7.824v44.634H0z" class="cls-2" data-name="사각형 44" transform="translate(46.937 23.366)"/>
+        <path id="패스_102" d="M54.359 1.5C41.821 16.345 29.885 29.685 1.5 29.685" class="cls-2" data-name="패스 102"/>
+        <path id="패스_103" d="M45.1 1.5h9.127v9.027" class="cls-2" data-name="패스 103" transform="translate(.132)"/>
+    </g>
+</svg>

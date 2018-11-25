@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 144.269">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:#fff}.cls-1{stroke:#707070;opacity:0}.cls-2{fill:#403b72}.cls-3{fill-rule:evenodd}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="contact_facebook">
+        <g id="사각형_51" class="cls-1" data-name="사각형 51">
+            <path d="M0 0h149v144.269H0z" class="cls-4"/>
+            <path d="M.5.5h148v143.269H.5z" class="cls-5"/>
+        </g>
+        <g id="contact_facebook-2" data-name="contact_facebook" transform="translate(11.824 9.46)">
+            <g id="그룹_76" data-name="그룹 76">
+                <g id="그룹_77" data-name="그룹 77">
+                    <path id="패스_14" d="M51.835 0A52.06 52.06 0 1 1 0 51.985 52.167 52.167 0 0 1 51.835 0z" class="cls-2" data-name="패스 14" transform="rotate(-76.714 63.837 50.519)"/>
+                    <path id="패스_13" d="M34.373 44.722v28.562a.67.67 0 0 0 .7.7h10.6a.67.67 0 0 0 .7-.7V44.258h7.688a.75.75 0 0 0 .7-.7l.7-8.708a.777.777 0 0 0-.7-.813h-8.39v-6.27A2.632 2.632 0 0 1 49.05 25.1h5.94a.67.67 0 0 0 .7-.7v-8.7a.67.67 0 0 0-.7-.7H44.973a10.671 10.671 0 0 0-10.716 10.681v8.476H28.9a.67.67 0 0 0-.7.7v8.708a.67.67 0 0 0 .7.7h5.358v.464z" class="cls-3" data-name="패스 13" transform="translate(20.18 17.626)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
