@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 144.683">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:#fff}.cls-1{stroke:#707070;opacity:0}.cls-2{fill:#403b72}.cls-4{clip-path:url(#clip-path)}.cls-5{stroke:none}.cls-6{fill:none}
+        </style>
+        <clipPath id="clip-path">
+            <path id="패스_34" d="M74.123 35.924A13.132 13.132 0 0 0 61.256 22.6H27.967A13.132 13.132 0 0 0 15.1 35.924v16.135a13.132 13.132 0 0 0 12.867 13.324h33.289a13.132 13.132 0 0 0 12.867-13.324z" data-name="패스 34" transform="translate(-15.1 -22.6)"/>
+        </clipPath>
+    </defs>
+    <g id="conotact_email">
+        <g id="사각형_53" class="cls-1" data-name="사각형 53">
+            <path d="M0 0h149v144.683H0z" class="cls-5"/>
+            <path d="M.5.5h148v143.683H.5z" class="cls-6"/>
+        </g>
+        <g id="contact_mail" transform="translate(11.825 9.487)">
+            <path id="패스_113" d="M52.582-.03a51.175 51.175 0 0 1 51.812 51.664 53.133 53.133 0 0 1-52.612 52.486A51.175 51.175 0 0 1-.03 52.456 53.133 53.133 0 0 1 52.582-.03z" class="cls-2" data-name="패스 113" transform="rotate(-77.843 63.218 51.05)"/>
+            <g id="그룹_78" data-name="그룹 78" transform="translate(29.056 39.11)">
+                <g id="그룹_9" data-name="그룹 9" transform="translate(2.833)">
+                    <path id="패스_31" d="M74.123 35.924A13.132 13.132 0 0 0 61.256 22.6H27.967A13.132 13.132 0 0 0 15.1 35.924v16.135a13.132 13.132 0 0 0 12.867 13.324h33.289a13.132 13.132 0 0 0 12.867-13.324z" class="cls-3" data-name="패스 31" transform="translate(-15.1 -22.6)"/>
+                </g>
+                <path id="패스_32" d="M74.438 27.8L44.809 40.757 15.887 27.8 12.7 32.2l32.109 14.914 32.817-14.791z" class="cls-2" data-name="패스 32" transform="translate(-12.7 -21.444)"/>
+                <g id="그룹_11" data-name="그룹 11" transform="translate(2.833)">
+                    <g id="그룹_10" class="cls-4" data-name="그룹 10">
+                        <path id="패스_33" d="M74.438 23.311L43.392 20.5l-27.5 2.811-3.187 4.4 32.104 14.914 32.817-14.791z" class="cls-3" data-name="패스 33" transform="translate(-15.533 -23.067)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

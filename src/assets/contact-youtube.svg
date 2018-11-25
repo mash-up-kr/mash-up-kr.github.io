@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 147.264">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:#fff}.cls-1{stroke:#707070;opacity:0}.cls-2{fill:#403b72}.cls-4{stroke:none}.cls-5{fill:none}
+        </style>
+    </defs>
+    <g id="contact_youtube">
+        <g id="사각형_52" class="cls-1" data-name="사각형 52">
+            <path d="M0 0h149v144.269H0z" class="cls-4" transform="translate(0 2.365)"/>
+            <path d="M.5.5h148v143.269H.5z" class="cls-5" transform="translate(0 2.365)"/>
+        </g>
+        <g id="contact_youtube-2" data-name="contact_youtube">
+            <circle id="타원_18" cx="52.066" cy="52.066" r="52.066" class="cls-2" data-name="타원 18" transform="rotate(-45 88.882 36.816)"/>
+            <g id="그룹_1" data-name="그룹 1" transform="translate(42.371 52.057)">
+                <path id="패스_12" d="M76.794 36.162A13.393 13.393 0 0 0 63.432 22.8h-34.57A13.393 13.393 0 0 0 15.5 36.162v16.182a13.393 13.393 0 0 0 13.362 13.362h34.57a13.393 13.393 0 0 0 13.362-13.362zm-21.821 8.949l-13.852 7.6c-.613.368-1.1-.123-1.1-.736v-15.69c0-.736.613-1.1 1.1-.736l13.852 7.968a.881.881 0 0 1 0 1.594z" class="cls-3" data-name="패스 12" transform="translate(-15.5 -22.8)"/>
+            </g>
+        </g>
+    </g>
+</svg>
