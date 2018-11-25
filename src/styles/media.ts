@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 import { join, keys, reduce } from 'lodash'
 
 interface Indexable {
-  [key: string]: any;
+  [key: string]: any
 }
 
 const sizes: Indexable = {

@@ -1,8 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import styled, { ThemeProvider } from 'styled-components'
-import GlobalStyle from '../styles/global'
+import { ThemeProvider } from 'styled-components'
+import { Background, Footer, Header, Layout } from '../components'
 import theme from '../styles/theme'
 import config from '../../data/SiteConfig'
 
@@ -10,10 +9,10 @@ interface Props {
   data: {
     site: {
       siteMetadata: {
-        title: string;
-      };
-    };
-  };
+        title: string
+      }
+    }
+  }
 }
 
 class Index extends React.Component<Props> {
@@ -21,11 +20,15 @@ class Index extends React.Component<Props> {
     const { data } = this.props
     return (
       <ThemeProvider theme={theme}>
-        <Wrapper>
-          <Helmet title={config.siteTitle} />
-          <GlobalStyle />
-          {data.site.siteMetadata.title}
-        </Wrapper>
+        <Background>
+          <Layout
+            title={config.siteTitle}
+            header={<Header>Header</Header>}
+            footer={<Footer />}
+          >
+            {data.site.siteMetadata.title}
+          </Layout>
+        </Background>
       </ThemeProvider>
     )
   }
@@ -41,9 +44,4 @@ export const query = graphql`
       }
     }
   }
-`
-
-const Wrapper = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
 `
