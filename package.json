@@ -33,9 +33,11 @@
     "gatsby-plugin-tslint": "0.0.2",
     "gatsby-plugin-typescript": "^2.0.1",
     "gh-pages": "^2.0.1",
-    "prettier": "^1.14.3",
+    "prettier": "^1.15.2",
     "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.16.0",
     "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^3.6.0",
     "typescript": "^3.1.6"
   },
@@ -50,6 +52,7 @@
     "build": "gatsby build",
     "build:pp": "gatsby build --prefix-paths",
     "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
-    "clean": "rm -rf public && rm -rf .cache"
+    "clean": "rm -rf public && rm -rf .cache",
+    "format": "prettier --write \"src/**/*.{ts,tsx,md}\""
   }
 }

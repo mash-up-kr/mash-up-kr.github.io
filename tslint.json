@@ -2,7 +2,8 @@
   "defaultSeverity": "error",
   "extends": [
       "tslint:recommended",
-      "tslint-react"
+      "tslint-react",
+      "tslint-config-prettier"
   ],
   "jsRules": {},
   "rules": {
@@ -16,5 +17,5 @@
     "jsx-no-multiline-js": [false],
     "object-literal-sort-keys": [false]
   },
-  "rulesDirectory": []
+  "rulesDirectory": ["tslint-plugin-prettier"]
 }
