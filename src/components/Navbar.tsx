@@ -28,8 +28,8 @@ const Heading = styled.h2`
 const Menu = styled.ul`
   overflow: auto;
   display: flex;
-  color: #fff;
-  border-bottom: 1px solid #fff;
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
   font-size: 0.75rem;
   font-weight: 600;
   white-space: nowrap;
