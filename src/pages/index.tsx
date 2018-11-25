@@ -20,7 +20,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
     <Background>
       <Layout
         title={config.siteTitle}
-        header={<Header>Mash-Up</Header>}
+        header={<Header>{data.site.siteMetadata.title}</Header>}
         footer={<Footer />}
       >
         {data.site.siteMetadata.title}
