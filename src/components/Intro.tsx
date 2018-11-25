@@ -1,16 +1,30 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 const Intro: React.SFC = () => (
-  <Wrapper>
-    <Paragraph aria-describedby="footnote">
-      <strong>Mash-Up</strong>, 디자이너와 개발자가 함께 성장하는 앱개발 동아리
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            videoUrl
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Wrapper>
+        <Paragraph aria-describedby="footnote">
+          <strong>Mash-Up</strong>, 디자이너와 개발자가 함께 성장하는 앱개발 동아리
     </Paragraph>
-    <Footnote id="footnote" lang="en">
-      <strong>Mash-Up is an IT group</strong> where designers and developers grow together.
+        <Footnote id="footnote" lang="en">
+          <strong>Mash-Up is an IT group</strong> where designers and developers grow together.
     </Footnote>
-    <VideoLink href="#">Play the video</VideoLink>
-  </Wrapper>
+        <VideoLink href={data.site.siteMetadata.videoUrl}>Play the video</VideoLink>
+      </Wrapper>
+    )}
+  />
 )
 
 export default Intro

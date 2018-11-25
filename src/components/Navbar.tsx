@@ -1,22 +1,34 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import map from 'lodash/map'
 import media from '../styles/media'
 import readableHiddenContent from '../styles/readable-hidden-content'
-import config from '../../data/siteConfig'
 
 const Navbar: React.SFC = () => (
-  <nav>
-    <Heading>글로벌 네비게이션</Heading>
-    <Menu>
-      {map(config.navItems, item => (
-        <MenuItem key={item.label}>
-          <LinkBox to={item.url}>{item.label}</LinkBox>
-        </MenuItem>
-      ))}
-    </Menu>
-  </nav>
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            menuItems
+          }
+        }
+      }
+    `}
+    render={data => (
+      <nav>
+        <Heading>글로벌 네비게이션</Heading>
+        <Menu>
+          {map(JSON.parse(data.site.siteMetadata.menuItems), item => (
+            <MenuItem key={item.label}>
+              <LinkBox to={item.url}>{item.label}</LinkBox>
+            </MenuItem>
+          ))}
+        </Menu>
+      </nav>
+    )}
+  />
 )
 
 export default Navbar
