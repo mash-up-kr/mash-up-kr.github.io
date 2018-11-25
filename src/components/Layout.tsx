@@ -26,7 +26,8 @@ const Layout: React.SFC<Props> = ({
 
 export default Layout
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+`
 
 const Header = styled.div``
 

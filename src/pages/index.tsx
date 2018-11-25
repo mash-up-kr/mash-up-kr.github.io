@@ -23,7 +23,7 @@ class Index extends React.Component<Props> {
         <Background>
           <Layout
             title={config.siteTitle}
-            header={<Header>Header</Header>}
+            header={<Header>Mash-Up</Header>}
             footer={<Footer />}
           >
             {data.site.siteMetadata.title}
