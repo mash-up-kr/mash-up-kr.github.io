@@ -15,26 +15,21 @@ interface Props {
   }
 }
 
-class Index extends React.Component<Props> {
-  render() {
-    const { data } = this.props
-    return (
-      <ThemeProvider theme={theme}>
-        <Background>
-          <Layout
-            title={config.siteTitle}
-            header={<Header>Mash-Up</Header>}
-            footer={<Footer />}
-          >
-            {data.site.siteMetadata.title}
-          </Layout>
-        </Background>
-      </ThemeProvider>
-    )
-  }
-}
+const IndexPage: React.SFC<Props> = ({ data }) => (
+  <ThemeProvider theme={theme}>
+    <Background>
+      <Layout
+        title={config.siteTitle}
+        header={<Header>Mash-Up</Header>}
+        footer={<Footer />}
+      >
+        {data.site.siteMetadata.title}
+      </Layout>
+    </Background>
+  </ThemeProvider>
+)
 
-export default Index
+export default IndexPage
 
 export const query = graphql`
   query {
