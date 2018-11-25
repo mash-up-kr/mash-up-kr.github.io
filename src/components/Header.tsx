@@ -24,7 +24,7 @@ const Title = styled.h1`
   overflow: hidden;
   width: 140px;
   height: 20px;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
   padding-top: 20px;
   background: url(${logo}) no-repeat;
 `

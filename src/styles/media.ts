@@ -6,6 +6,7 @@ interface Indexable {
 }
 
 const sizes: Indexable = {
+  mobile: 360,
   tablet: 576,
   desktop: 1200,
 }
