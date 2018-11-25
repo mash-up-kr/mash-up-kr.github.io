@@ -13,29 +13,8 @@
     "semicolon": [false, "never"],
     "no-console": [false],
     "no-var-requires": true,
-    "jsx-no-multiline-js": [false]
+    "jsx-no-multiline-js": [false],
+    "object-literal-sort-keys": [false]
   },
   "rulesDirectory": []
 }
-
-// {
-//   "extends": ["airbnb", "prettier"],
-//   "plugins": ["react", "jsx-a11y", "import"],
-//   "rules": {
-//     "semi": ["error", "never"],
-//     "react/prefer-stateless-function": "off",
-//     "react/prop-types": "off",
-//     "react/no-danger": "off",
-//     "jsx-a11y/anchor-is-valid": [ "error", {
-//       "components": [ "Link" ],
-//       "specialLink": [ "hrefLeft", "hrefRight", "to" ],
-//       "aspects": [ "noHref", "invalidHref", "preferButton" ]
-//     }]
-//   },
-//   "settings": {
-//     "import/core-modules": []
-//   },
-//   "env": {
-//     "browser": true
-//   }
-// }
