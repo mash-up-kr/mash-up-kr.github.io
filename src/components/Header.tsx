@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Intro from './Intro'
 import Navbar from './Navbar'
 import { logo } from '../../static/images'
 
@@ -11,6 +12,7 @@ const Header: React.SFC = ({ children }) => (
   <StyledHeader>
     <Title>{children}</Title>
     <Navbar />
+    <Intro />
   </StyledHeader>
 )
 
