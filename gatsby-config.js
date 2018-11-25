@@ -3,12 +3,12 @@ const config = require('./data/SiteConfig')
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: 'Mash-Up',
     siteTitle: 'Mash-Up - 앱 개발 동아리',
     siteTitleAlt: '',
     siteLogo: '',
     siteDescription: '',
     siteUrl: 'https://mash-up-kr.github.io',
+    title: 'Mash-Up',
     videoUrl: 'https://youtu.be/0rgspcbnQEA',
     menuItems: JSON.stringify([
       { label: 'MASH-UP', title: '메쉬업', url: '#mash-up' },
