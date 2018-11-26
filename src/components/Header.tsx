@@ -8,7 +8,7 @@ interface Props {
   children: React.ReactNode | string
 }
 
-const Header: React.SFC = ({ children }) => (
+const Header: React.SFC<Props> = ({ children }) => (
   <StyledHeader>
     <Title>{children}</Title>
     <Navbar />
