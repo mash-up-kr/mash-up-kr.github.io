@@ -17,10 +17,10 @@ const Intro: React.SFC = () => (
       <Wrapper>
         <Paragraph aria-describedby="footnote">
           <strong>Mash-Up</strong>, 디자이너와 개발자가 함께 성장하는 앱개발 동아리
-    </Paragraph>
+        </Paragraph>
         <Footnote id="footnote" lang="en">
           <strong>Mash-Up is an IT group</strong> where designers and developers grow together.
-    </Footnote>
+        </Footnote>
         <VideoLink href={data.site.siteMetadata.videoUrl}>Play the video</VideoLink>
       </Wrapper>
     )}
