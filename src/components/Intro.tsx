@@ -52,6 +52,7 @@ const Paragraph = styled.p`
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.6;
+  word-break: keep-all;
 `
 
 const Footnote = styled.p`
