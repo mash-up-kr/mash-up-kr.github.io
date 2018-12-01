@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import media from '../styles/media'
 
 const Intro: React.SFC = () => (
   <StaticQuery
@@ -21,7 +22,12 @@ const Intro: React.SFC = () => (
         <Footnote id="footnote" lang="en">
           <strong>Mash-Up is an IT group</strong> where designers and developers grow together.
         </Footnote>
-        <VideoLink href={data.site.siteMetadata.videoUrl}>Play the video</VideoLink>
+        <VideoLink
+          href={data.site.siteMetadata.videoUrl}
+          target="_blank"
+        >
+          Play the video
+        </VideoLink>
       </Wrapper>
     )}
   />
@@ -50,6 +56,7 @@ const Paragraph = styled.p`
 
 const Footnote = styled.p`
   order: -1;
+  display: none;
   opacity: .16;
   margin-bottom: .5rem;
   padding: .3rem .5rem;
@@ -60,13 +67,18 @@ const Footnote = styled.p`
   backdrop-filter: blur(30px);
   box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, .16);
   object-fit: contain;
+  ${media.tablet`
+    display: block;
+  `}
 `
 
 const VideoLink = styled.a`
   display: block;
+  width: 160px;
   padding: .75rem 1.3rem;
   color: #FFF;
   background-color: ${({ theme }) => theme.secondaryColor};
   font-size: .75rem;
   font-weight: 600;
+  text-align: center;
 `
