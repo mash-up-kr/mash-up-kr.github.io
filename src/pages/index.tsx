@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
-import { Background, Footer, Header, Layout } from '../components'
+import { Hero, Footer, Header, Layout } from '../components'
 import theme from '../styles/theme'
 
 interface Props {
@@ -17,7 +17,7 @@ interface Props {
 
 const IndexPage: React.SFC<Props> = ({ data }) => (
   <ThemeProvider theme={theme}>
-    <Background>
+    <Hero>
       <Layout
         title={data.site.siteMetadata.siteTitle}
         header={<Header>{data.site.siteMetadata.title}</Header>}
@@ -25,7 +25,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
       >
         {data.site.siteMetadata.title}
       </Layout>
-    </Background>
+    </Hero>
   </ThemeProvider>
 )
 

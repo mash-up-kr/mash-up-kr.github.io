@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { mainPhoto } from '../../static/images'
 
-const Background = styled.div`
+const Hero = styled.div`
   position: relative;
   height: 3333px;
   &::before {
@@ -26,4 +26,4 @@ const Background = styled.div`
   }
 `
 
-export default Background
+export default Hero
