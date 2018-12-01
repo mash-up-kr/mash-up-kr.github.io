@@ -1,7 +1,4 @@
-const config = require('./data/SiteConfig')
-
 module.exports = {
-  pathPrefix: config.pathPrefix,
   siteMetadata: {
     siteTitle: 'Mash-Up - 앱 개발 동아리',
     siteTitleAlt: '',
