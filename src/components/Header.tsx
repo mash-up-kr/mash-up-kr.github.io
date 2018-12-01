@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Intro from './Intro'
 import Navbar from './Navbar'
@@ -9,11 +10,26 @@ interface Props {
 }
 
 const Header: React.SFC<Props> = ({ children }) => (
-  <StyledHeader>
-    <Title>{children}</Title>
-    <Navbar />
-    <Intro />
-  </StyledHeader>
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            siteUrl
+          }
+        }
+      }
+    `}
+    render={data => (
+      <StyledHeader>
+        <Anchor href={data.site.siteMetadata.siteUrl}>
+          <Title>{children}</Title>
+        </Anchor>
+        <Navbar />
+        <Intro />
+      </StyledHeader>
+    )}
+  />
 )
 
 export default Header
@@ -22,11 +38,15 @@ const StyledHeader = styled.header`
   padding-top: 1.1rem;
 `
 
+const Anchor = styled.a`
+  display: block;
+  width: 140px;
+  margin: 0 auto 1.5rem;
+`
+
 const Title = styled.h1`
   overflow: hidden;
-  width: 140px;
   height: 20px;
-  margin: 0 auto 1.5rem;
   padding-top: 20px;
   background: url(${logo}) no-repeat;
 `
