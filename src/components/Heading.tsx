@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 interface Props {
+  as?: any
   children: React.ReactNode | string
 }
 
