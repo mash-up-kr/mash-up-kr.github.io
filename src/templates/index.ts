@@ -1,0 +1,5 @@
+export { default as BasicInfo } from './BasicInfo'
+export { default as Goal } from './Goal'
+export { default as Footer } from './Footer'
+export { default as Header } from './Header'
+export { default as PrimaryActs } from './PrimaryActs'

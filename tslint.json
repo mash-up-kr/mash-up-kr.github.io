@@ -14,6 +14,7 @@
     "semicolon": [false, "never"],
     "no-console": [false],
     "no-var-requires": true,
+    "jsx-boolean-value": false,
     "jsx-no-multiline-js": [false],
     "jsx-no-lambda": [false],
     "object-literal-sort-keys": [false]
