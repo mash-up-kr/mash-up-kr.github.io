@@ -1,7 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
-import { BasicInfo, Footer, Hero, Header, Layout } from '../components'
+import {
+  BasicInfo, Footer, Hero,
+  Header, Layout, PrimaryActs,
+} from '../components'
 import theme from '../styles/theme'
 
 interface Props {
@@ -24,6 +27,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
         footer={<Footer />}
       >
         <BasicInfo />
+        <PrimaryActs />
       </Layout>
     </Hero>
   </ThemeProvider>
