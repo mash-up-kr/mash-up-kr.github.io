@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     margin: 0;
     color: #000;
-    font-family: 'Lato', 'NanumSquare', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', sans-serif;
+    font-family: 'Lato', 'Apple SD Gothic Neo', 'NanumSquare', 'Nanum Barun Gothic', 'Nanum Gothic', sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
