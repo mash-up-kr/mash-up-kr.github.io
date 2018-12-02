@@ -14,13 +14,6 @@ const Hero = styled.div`
     background: ${({ theme }) => theme.backgroundColor} url(${mainPhoto}) center top / 150% no-repeat;
     filter: blur(2px);
   }
-  &::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-  }
 `
 
 export default Hero
