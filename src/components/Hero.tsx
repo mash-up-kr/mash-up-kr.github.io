@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mainPhoto } from '../../static/images'
+import { mainPhoto } from '../assets/images'
 
 const Hero = styled.div`
   position: relative;

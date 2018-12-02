@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Paper from './Paper'
 import media from '../styles/media'
 import readableHiddenContent from '../styles/readable-hidden-content'
-import { projectIcon, seminarIcon, studyIcon } from '../../static/images'
+import { projectIcon, seminarIcon, studyIcon } from '../assets/images'
 
 const PrimaryActs: React.SFC = () => (
   <Wrapper>

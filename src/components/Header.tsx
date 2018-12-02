@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Intro from './Intro'
 import Navbar from './Navbar'
-import { logo } from '../../static/images'
+import { logo } from '../assets/images'
 
 interface Props {
   children: React.ReactNode | string
