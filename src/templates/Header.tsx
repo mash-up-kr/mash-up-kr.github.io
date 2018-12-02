@@ -1,8 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import Intro from './Intro'
-import Navbar from './Navbar'
+import { Intro, Navbar } from '../components'
 import { logo } from '../assets/images'
 
 interface Props {

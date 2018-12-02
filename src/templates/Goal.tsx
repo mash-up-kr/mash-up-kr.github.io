@@ -1,7 +1,6 @@
 import React from 'react'
-import styled, { StyledFunction } from 'styled-components'
-import Heading from './Heading'
-import Paper from './Paper'
+import styled from 'styled-components'
+import { Heading, Paper } from '../components'
 import { crownIcon, meritIcon, visionIcon } from '../assets/images'
 
 const Goal: React.SFC = () => (
