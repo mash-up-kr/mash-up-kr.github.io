@@ -19,7 +19,7 @@ const Goal: React.SFC = () => (
     </Paragraph>
     <RectangularPaper as="section">
       <SubHeading>
-        <Eng>
+        <Eng lang="en">
           <Span>Merit</Span>
         </Eng>
         <Kor>메쉬업의 메리트</Kor>
@@ -32,7 +32,7 @@ const Goal: React.SFC = () => (
     </RectangularPaper>
     <RectangularPaper as="section">
       <SubHeading>
-        <Eng>
+        <Eng lang="en">
           <Span>Vision</Span>
         </Eng>
         <Kor>메쉬업의 궁극적인 목표</Kor>
