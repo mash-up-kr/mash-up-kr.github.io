@@ -11,9 +11,9 @@ const Hero = styled.div`
     width: 100%;
     height: 1800px;
     background:
-      url(${appImage}) 130% 90% no-repeat,
+      url(${appImage}) 50% 90% no-repeat,
       url(${mobileBg}) no-repeat;
-    background-size: 80%, cover;
+    background-size: contain, cover;
   }
   & > * {
     position: relative;
