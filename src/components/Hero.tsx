@@ -9,7 +9,7 @@ const Hero = styled.div`
     position: absolute;
     top: 40%;
     width: 100%;
-    height: 1500px;
+    height: 1800px;
     background: url(${mobileBg}) no-repeat;
     background-size: cover;
   }
