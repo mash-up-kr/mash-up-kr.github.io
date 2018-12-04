@@ -1,3 +1,4 @@
+export { default as Activity } from './Activity'
 export { default as BasicInfo } from './BasicInfo'
 export { default as Goal } from './Goal'
 export { default as Footer } from './Footer'

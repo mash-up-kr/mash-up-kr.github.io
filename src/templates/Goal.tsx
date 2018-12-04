@@ -52,10 +52,11 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 6rem;
 `
 
 const GoalHeading = styled(Heading)`
-  width: 110px;
+  width: 7rem;
   margin-bottom: 1.2rem;
   &::before {
     content: '';
