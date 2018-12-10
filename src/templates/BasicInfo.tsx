@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import media from '../styles/media'
 import readableHiddenContent from '../styles/readable-hidden-content'
 
-const BasicInfo: React.SFC = () => (
+const BasicInfo: React.FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query {

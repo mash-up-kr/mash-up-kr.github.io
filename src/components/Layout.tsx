@@ -10,7 +10,7 @@ interface Props {
   children: React.ReactNode | string
 }
 
-const Layout: React.SFC<Props> = ({
+const Layout: React.FunctionComponent<Props> = ({
   title, header, footer, children,
 }) => (
   <>

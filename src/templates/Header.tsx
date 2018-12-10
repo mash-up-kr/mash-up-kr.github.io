@@ -8,7 +8,7 @@ interface Props {
   children: React.ReactNode | string
 }
 
-const Header: React.SFC<Props> = ({ children }) => (
+const Header: React.FunctionComponent<Props> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query {

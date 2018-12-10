@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import media from '../styles/media'
 
-const Intro: React.SFC = () => (
+const Intro: React.FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query {

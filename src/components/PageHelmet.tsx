@@ -6,7 +6,7 @@ interface Props {
   description?: string
 }
 
-const PageHelmet: React.SFC<Props> = ({ title }) => (
+const PageHelmet: React.FunctionComponent<Props> = ({ title }) => (
   <Helmet
     title={title}
   />
