@@ -4,7 +4,8 @@ import { ThemeProvider } from 'styled-components'
 import { Hero, Layout } from '../components'
 import {
   Activity, BasicInfo, Footer,
-  Goal, Header, PrimaryActs,
+  Goal, Header, Interview,
+  PrimaryActs,
 } from '../templates'
 import theme from '../styles/theme'
 
@@ -19,7 +20,7 @@ interface Props {
   }
 }
 
-const IndexPage: React.SFC<Props> = ({ data }) => (
+const IndexPage: React.FunctionComponent<Props> = ({ data }) => (
   <ThemeProvider theme={theme}>
     <Hero>
       <Layout
@@ -31,6 +32,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => (
         <PrimaryActs />
         <Goal />
         <Activity />
+        <Interview />
       </Layout>
     </Hero>
   </ThemeProvider>

@@ -5,7 +5,7 @@ import map from 'lodash/map'
 import media from '../styles/media'
 import readableHiddenContent from '../styles/readable-hidden-content'
 
-const Navbar: React.SFC = () => (
+const Navbar: React.FunctionComponent = () => (
   <StaticQuery
     query={graphql`
       query {

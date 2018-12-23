@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Heading } from '../components'
 
-const Activity: React.SFC = () => (
+const Activity: React.FunctionComponent = () => (
   <Wrapper>
     <ActivityHeading>Activity</ActivityHeading>
     <Paragraph>

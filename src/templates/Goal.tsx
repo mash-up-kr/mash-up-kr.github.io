@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Heading, Paper } from '../components'
 import { crownIcon, meritIcon, visionIcon } from '../assets/images'
 
-const Goal: React.SFC = () => (
+const Goal: React.FunctionComponent = () => (
   <Wrapper>
     <GoalHeading>Mash-Up</GoalHeading>
     <TagList>

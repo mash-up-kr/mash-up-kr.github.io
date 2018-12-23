@@ -5,7 +5,7 @@ import media from '../styles/media'
 import readableHiddenContent from '../styles/readable-hidden-content'
 import { projectIcon, seminarIcon, studyIcon } from '../assets/images'
 
-const PrimaryActs: React.SFC = () => (
+const PrimaryActs: React.FunctionComponent = () => (
   <Wrapper>
     <Heading>메쉬업의 주요 활동</Heading>
     <ActList>

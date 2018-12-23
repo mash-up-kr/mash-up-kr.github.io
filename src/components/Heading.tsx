@@ -6,7 +6,7 @@ interface Props {
   children: React.ReactNode | string
 }
 
-const Heading: React.SFC<Props> = ({ children, ...rest }) => (
+const Heading: React.FunctionComponent<Props> = ({ children, ...rest }) => (
   <StyledHeading {...rest}>
     <Span>{children}</Span>
   </StyledHeading>
