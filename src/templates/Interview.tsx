@@ -13,7 +13,7 @@ interface State {
   index: number
 }
 
-class Interview extends Component<null, State> {
+class Interview extends Component<any, State> {
   state = { index: 0 }
 
   render() {
