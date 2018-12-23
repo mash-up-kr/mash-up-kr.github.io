@@ -1,6 +1,7 @@
 export { default as appImage }                      from './app-image.png'
 export { default as appImage2X }                    from './app-image@2x.png'
 export { default as appImage3X }                    from './app-image@3x.png'
+export { default as backgroundImage }               from './background-image.svg'
 export { default as contactEmail }                  from './contact-email.svg'
 export { default as contactFacebook }               from './contact-facebook.svg'
 export { default as contactGithub }                 from './contact-github.svg'
