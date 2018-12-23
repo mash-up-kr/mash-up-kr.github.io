@@ -69,7 +69,7 @@ class Interview extends Component<any, State> {
 export default Interview
 
 const Wrapper = styled.div`
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   padding: 0 2rem;
 `
 
@@ -80,9 +80,9 @@ const InterviewHeading = styled(Heading)`
 
 const Button = styled.button`
   position: relative;
+  overflow: hidden;
   width: 32px;
   height: 32px;
-  overflow: hidden;
   padding-top: 32px;
   background: url(${({ backgroundUrl }: { backgroundUrl: string }) => backgroundUrl}) no-repeat;
   font-weight: 700;
