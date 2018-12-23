@@ -30,7 +30,7 @@ class Interview extends Component<null, State> {
             autoplay
             framePadding="0 4rem"
             beforeSlide={slideIndex => this.setState({ index: getNextIndex(slideIndex, interviews) })}
-            renderCenterLeftControls={({ previousSlide, ...rest }) => (
+            renderCenterLeftControls={({ previousSlide }) => (
               <Button
                 type="button"
                 onClick={previousSlide}
