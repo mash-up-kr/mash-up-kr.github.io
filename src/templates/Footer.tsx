@@ -22,7 +22,7 @@ const Footer: React.FunctionComponent = () => (
           </Anchor>
         </ContactItem>
         <ContactItem backgroundUrl={contactEmail}>
-          <Anchor href="mailto:" target="_blank">
+          <Anchor href="mailto:recruit.mashup@gmail.com">
             Email
           </Anchor>
         </ContactItem>
