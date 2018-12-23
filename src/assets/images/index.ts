@@ -6,6 +6,8 @@ export { default as contactFacebook }               from './contact-facebook.svg
 export { default as contactGithub }                 from './contact-github.svg'
 export { default as contactYoutube }                from './contact-youtube.svg'
 export { default as crownIcon }                     from './crown-icon.svg'
+export { default as interviewLeft }                 from './interview-left.svg'
+export { default as interviewRight }                from './interview-right.svg'
 export { default as logo }                          from './logo.svg'
 export { default as mainPhoto }                     from './main-photo.png'
 export { default as mainPhoto2X }                   from './main-photo@2x.png'

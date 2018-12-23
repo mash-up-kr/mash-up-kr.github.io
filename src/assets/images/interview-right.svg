@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1,.cls-2,.cls-4{fill:none}.cls-1{stroke:#c3a4e6;stroke-width:1.5px}.cls-2{stroke:#7514e0}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="interview_right" transform="rotate(180 15 15)">
+        <g id="타원_14" class="cls-1" data-name="타원 14">
+            <ellipse cx="15" cy="15" class="cls-3" rx="15" ry="15"/>
+            <ellipse cx="15" cy="15" class="cls-4" rx="14.25" ry="14.25"/>
+        </g>
+        <g id="타원_15" class="cls-2" data-name="타원 15" transform="translate(3.344 3.344)">
+            <ellipse cx="11.656" cy="11.656" class="cls-3" rx="11.656" ry="11.656"/>
+            <ellipse cx="11.656" cy="11.656" class="cls-4" rx="11.156" ry="11.156"/>
+        </g>
+        <path id="패스_10" d="M255.922 4291.951l-4.022 2.8 4.022 3.138" class="cls-2" data-name="패스 10" transform="translate(-239.045 -4279.816)"/>
+    </g>
+</svg>
