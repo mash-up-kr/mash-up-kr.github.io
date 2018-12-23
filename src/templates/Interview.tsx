@@ -24,12 +24,12 @@ class Interview extends Component<null, State> {
         <InterviewHeading>Interview</InterviewHeading>
         <RectangularPaper>
           <ImageBox>
-            <Profile src={interviews[index].image} alt="프로필" />
+            <Profile src={interviewees[index].image} alt="프로필" />
           </ImageBox>
           <StyledCarousel
             autoplay
             framePadding="0 4rem"
-            beforeSlide={slideIndex => this.setState({ index: getNextIndex(slideIndex, interviews) })}
+            beforeSlide={slideIndex => this.setState({ index: getNextIndex(slideIndex, interviewees) })}
             renderCenterLeftControls={({ previousSlide }) => (
               <Button
                 type="button"
@@ -51,20 +51,14 @@ class Interview extends Component<null, State> {
             renderBottomCenterControls={() => <>{null}</>}
             wrapAround
           >
-            {map(
-              (interview: { content: string; name: string; image: string }) => (
-                <Blockquote key={interview.name}>
-                  {map(
-                    paragraph => (
-                      <Paragraph key={paragraph}>{paragraph}</Paragraph>
-                    ),
-                    split('\n', interview.content)
-                  )}
-                  <Cite>{interview.name}</Cite>
-                </Blockquote>
-              ),
-              interviews
-            )}
+            {map((interviewee: { content: string; name: string; image: string }) => (
+              <Blockquote key={interviewee.name}>
+                {map(paragraph => (
+                    <Paragraph key={paragraph}>{paragraph}</Paragraph>
+                  ), split('\n', interviewee.content))}
+                <Cite>{interviewee.name}</Cite>
+              </Blockquote>
+            ), interviewees)}
           </StyledCarousel>
         </RectangularPaper>
       </Wrapper>
@@ -147,15 +141,14 @@ const Cite = styled.cite`
   font-style: initial;
 `
 
-interface Interview {
+interface Interviewee {
   name: string
   content: string
   image: string
   alt: string
 }
 
-// XXX: TS2740
-const interviews = [
+const interviewees: Interviewee[] = [
   {
     name: '- 5기 디자인 팀장, 김주성',
     content:
