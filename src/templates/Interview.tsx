@@ -13,7 +13,7 @@ interface State {
   index: number
 }
 
-class Interview extends Component<null, State> {
+class Interview extends Component<any, State> {
   state = { index: 0 }
 
   render() {
@@ -24,12 +24,12 @@ class Interview extends Component<null, State> {
         <InterviewHeading>Interview</InterviewHeading>
         <RectangularPaper>
           <ImageBox>
-            <Profile src={interviews[index].image} alt="프로필" />
+            <Profile src={interviewees[index].image} alt="프로필" />
           </ImageBox>
           <StyledCarousel
             autoplay
             framePadding="0 4rem"
-            beforeSlide={slideIndex => this.setState({ index: getNextIndex(slideIndex, interviews) })}
+            beforeSlide={slideIndex => this.setState({ index: getNextIndex(slideIndex, interviewees) })}
             renderCenterLeftControls={({ previousSlide }) => (
               <Button
                 type="button"
@@ -51,20 +51,14 @@ class Interview extends Component<null, State> {
             renderBottomCenterControls={() => <>{null}</>}
             wrapAround
           >
-            {map(
-              (interview: { content: string; name: string; image: string }) => (
-                <Blockquote key={interview.name}>
-                  {map(
-                    paragraph => (
-                      <Paragraph key={paragraph}>{paragraph}</Paragraph>
-                    ),
-                    split('\n', interview.content)
-                  )}
-                  <Cite>{interview.name}</Cite>
-                </Blockquote>
-              ),
-              interviews
-            )}
+            {map((interviewee: { content: string; name: string; image: string }) => (
+              <Blockquote key={interviewee.name}>
+                {map(paragraph => (
+                    <Paragraph key={paragraph}>{paragraph}</Paragraph>
+                  ), split('\n', interviewee.content))}
+                <Cite>{interviewee.name}</Cite>
+              </Blockquote>
+            ), interviewees)}
           </StyledCarousel>
         </RectangularPaper>
       </Wrapper>
@@ -75,7 +69,7 @@ class Interview extends Component<null, State> {
 export default Interview
 
 const Wrapper = styled.div`
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   padding: 0 2rem;
 `
 
@@ -86,9 +80,9 @@ const InterviewHeading = styled(Heading)`
 
 const Button = styled.button`
   position: relative;
+  overflow: hidden;
   width: 32px;
   height: 32px;
-  overflow: hidden;
   padding-top: 32px;
   background: url(${({ backgroundUrl }: { backgroundUrl: string }) => backgroundUrl}) no-repeat;
   font-weight: 700;
@@ -147,15 +141,14 @@ const Cite = styled.cite`
   font-style: initial;
 `
 
-interface Interview {
+interface Interviewee {
   name: string
   content: string
   image: string
   alt: string
 }
 
-// XXX: TS2740
-const interviews = [
+const interviewees: Interviewee[] = [
   {
     name: '- 5기 디자인 팀장, 김주성',
     content:

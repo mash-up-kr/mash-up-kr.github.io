@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { appImage } from '../assets/images'
 import { Heading } from '../components'
 
 const Activity: React.FunctionComponent = () => (
@@ -18,7 +19,8 @@ const Activity: React.FunctionComponent = () => (
 export default Activity
 
 const Wrapper = styled.div`
-  margin-bottom: 15rem;
+  padding-bottom: 15rem;
+  background: url(${appImage}) 50% 90% no-repeat;
 `
 
 const ActivityHeading = styled(Heading)`
