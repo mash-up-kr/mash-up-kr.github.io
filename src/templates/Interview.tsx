@@ -70,7 +70,7 @@ export default Interview
 
 const Wrapper = styled.div`
   margin-bottom: 5rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 `
 
 const InterviewHeading = styled(Heading)`
@@ -97,7 +97,7 @@ const RectangularPaper = styled(Paper)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem 0.75rem;
+  padding: 3rem .75rem;
 `
 
 const ImageBox = styled.div`
