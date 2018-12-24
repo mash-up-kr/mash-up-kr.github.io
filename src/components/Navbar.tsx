@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import map from 'lodash/map'
+import { map } from 'lodash/fp'
 import { media, readableHiddenContent } from '../styles'
 
 const Navbar: React.FunctionComponent = () => (
@@ -19,11 +19,11 @@ const Navbar: React.FunctionComponent = () => (
       <nav>
         <Heading>글로벌 네비게이션</Heading>
         <Menu>
-          {map(JSON.parse(data.site.siteMetadata.menuItems), item => (
+          {map(item => (
             <MenuItem key={item.label}>
               <LinkBox to={item.url}>{item.label}</LinkBox>
             </MenuItem>
-          ))}
+          ), JSON.parse(data.site.siteMetadata.menuItems))}
         </Menu>
       </nav>
     )}

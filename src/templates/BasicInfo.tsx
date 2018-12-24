@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import map from 'lodash/map'
+import { map } from 'lodash/fp'
 import styled from 'styled-components'
 import { media, readableHiddenContent } from '../styles'
 
@@ -19,7 +19,7 @@ const BasicInfo: React.FunctionComponent = () => (
       <Wrapper>
         <Heading>기본 정보</Heading>
         <InfoList>
-          {map(JSON.parse(data.site.siteMetadata.infoItems), item => (
+          {map(item => (
             <InfoItem key={item.title}>
               <InfoTitle>{item.title}</InfoTitle>
               <InfoContent>
@@ -27,7 +27,7 @@ const BasicInfo: React.FunctionComponent = () => (
                 <Unit>{item.unit}</Unit>
               </InfoContent>
             </InfoItem>
-          ))}
+          ), JSON.parse(data.site.siteMetadata.infoItems))}
         </InfoList>
       </Wrapper>
     )}
