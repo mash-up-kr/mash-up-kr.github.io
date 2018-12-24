@@ -11,7 +11,7 @@ const Hero = styled.div`
   ${media.tablet`
     background:
       url(${backgroundImage}) 0 600px / 100% no-repeat,
-      url(${mainPhoto}) center top / 150% no-repeat,
+      url(${mainPhoto}) center top / 100% no-repeat,
       linear-gradient(to bottom, #7C72EB, #7C72EB 88%, #4C3599 100%) no-repeat;
   `}
 `
