@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PageHelmet from './PageHelmet'
-import GlobalStyle from '../styles/global'
+import { GlobalStyle } from '../styles'
 
 interface Props {
   title: string

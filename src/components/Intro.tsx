@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import media from '../styles/media'
+import { media } from '../styles'
 
 const Intro: React.FunctionComponent = () => (
   <StaticQuery

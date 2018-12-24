@@ -2,8 +2,7 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import map from 'lodash/map'
-import media from '../styles/media'
-import readableHiddenContent from '../styles/readable-hidden-content'
+import { media, readableHiddenContent } from '../styles'
 
 const Navbar: React.FunctionComponent = () => (
   <StaticQuery

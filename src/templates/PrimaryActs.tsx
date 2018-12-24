@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Paper } from '../components'
-import media from '../styles/media'
-import readableHiddenContent from '../styles/readable-hidden-content'
+import { media, readableHiddenContent } from '../styles'
 import { projectIcon, seminarIcon, studyIcon } from '../assets/images'
 
 const PrimaryActs: React.FunctionComponent = () => (

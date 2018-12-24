@@ -7,7 +7,7 @@ import {
   Goal, Header, Interview,
   PrimaryActs,
 } from '../templates'
-import theme from '../styles/theme'
+import { theme } from '../styles'
 
 interface Props {
   data: {

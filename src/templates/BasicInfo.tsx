@@ -2,8 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import map from 'lodash/map'
 import styled from 'styled-components'
-import media from '../styles/media'
-import readableHiddenContent from '../styles/readable-hidden-content'
+import { media, readableHiddenContent } from '../styles'
 
 const BasicInfo: React.FunctionComponent = () => (
   <StaticQuery
