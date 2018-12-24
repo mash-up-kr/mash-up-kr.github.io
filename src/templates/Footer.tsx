@@ -33,6 +33,10 @@ const Footer: React.FunctionComponent = () => (
         </ContactItem>
       </ContactList>
     </Address>
+    <Copyright>
+      Copyright © 2018. Mash Up <br />
+      Since 2018. All rights reserved.
+    </Copyright>
   </Wrapper>
 )
 
@@ -75,3 +79,5 @@ const Anchor = styled.a`
   height: 60px;
   padding-top: 60px;
 `
+
+const Copyright = styled.small``

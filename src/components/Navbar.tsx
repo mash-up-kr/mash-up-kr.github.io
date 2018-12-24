@@ -16,7 +16,7 @@ const Navbar: React.FunctionComponent = () => (
       }
     `}
     render={data => (
-      <nav>
+      <Wrapper>
         <Heading>글로벌 네비게이션</Heading>
         <Menu>
           {map(item => (
@@ -25,12 +25,18 @@ const Navbar: React.FunctionComponent = () => (
             </MenuItem>
           ), JSON.parse(data.site.siteMetadata.menuItems))}
         </Menu>
-      </nav>
+      </Wrapper>
     )}
   />
 )
 
 export default Navbar
+
+const Wrapper = styled.nav`
+  ${media.desktop`
+    flex-grow: 1;
+  `}
+`
 
 const Heading = styled.h2`
   ${readableHiddenContent}
@@ -46,6 +52,10 @@ const Menu = styled.ul`
   white-space: nowrap;
   ${media.mobile`
     justify-content: space-around;
+  `}
+  ${media.tablet`
+    border-bottom: none;
+    font-size: .9rem;
   `}
 `
 

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { appImage } from '../assets/images'
 import { Heading } from '../components'
+import { media } from '../styles'
 
 const Activity: React.FunctionComponent = () => (
   <Wrapper>
@@ -21,11 +22,23 @@ export default Activity
 const Wrapper = styled.div`
   padding-bottom: 15rem;
   background: url(${appImage}) 50% 90% no-repeat;
+  ${media.desktop`
+    margin: 0 4rem 15rem;
+    padding: 10rem 0;
+    background: url(${appImage}) 100% 50% / contain no-repeat;
+  `}
 `
 
 const ActivityHeading = styled(Heading)`
   width: 7rem;
   margin: 0 auto 1.5rem;
+  ${media.desktop`
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+    &::after {
+      height: 18px;
+    }
+  `}
 `
 
 const Paragraph = styled.p`
@@ -34,4 +47,12 @@ const Paragraph = styled.p`
   text-align: center;
   line-height: 1.7;
   word-break: keep-all;
+  ${media.tablet`
+    font-size: .9rem;
+  `}
+  ${media.desktop`
+    max-width: 500px;
+    margin: 0;
+    text-align: left;
+  `}
 `

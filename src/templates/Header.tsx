@@ -36,18 +36,29 @@ const Header: React.FunctionComponent<Props> = ({ children }) => (
 
 export default Header
 
-const StyledHeader = styled.header`
-  padding-top: 1.1rem;
-`
+const StyledHeader = styled.header``
 
 const Top = styled.div`
-
+  padding-top: 1.1rem;
+  ${media.desktop`
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    margin: 0 4rem;
+  `}
+  ${media.tablet`
+    border-bottom: 1px solid #FFF;
+  `}
 `
 
 const Anchor = styled.a`
-  display: block;
+  display: flex;
+  align-items: center;
   width: 140px;
   margin: 0 auto 1.5rem;
+  ${media.desktop`
+    margin: 0;
+  `}
 `
 
 const Title = styled.h1`

@@ -42,6 +42,9 @@ const Wrapper = styled.div`
   width: 90%;
   margin: 0 auto;
   padding: 4rem 0;
+  ${media.tablet`
+      padding: 8rem 0;
+  `}
 `
 
 const Paragraph = styled.p`
@@ -53,18 +56,21 @@ const Paragraph = styled.p`
   font-weight: 700;
   line-height: 1.6;
   word-break: keep-all;
+  ${media.tablet`
+    max-width: 360px;
+    font-size: 1.5rem;
+  `}
 `
 
 const Footnote = styled.p`
   order: -1;
   display: none;
-  opacity: .16;
   margin-bottom: .5rem;
   padding: .3rem .5rem;
   color: #FFF;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.16);
   border-radius: 23px;
-  font-size: 0.6rem;
+  font-size: .8rem;
   backdrop-filter: blur(30px);
   box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, .16);
   object-fit: contain;
@@ -75,11 +81,20 @@ const Footnote = styled.p`
 
 const VideoLink = styled.a`
   display: block;
-  width: 160px;
+  min-width: 160px;
   padding: .75rem 1.3rem;
   color: #FFF;
   background-color: ${({ theme }) => theme.secondaryColor};
   font-size: .75rem;
   font-weight: 600;
   text-align: center;
+  ${media.tablet`
+    width: 240px;
+    padding: 1rem
+    font-size: .9rem;
+  `}
+  ${media.desktop`
+    width: 320px;
+    font-size: 1.2rem;
+  `}
 `

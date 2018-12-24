@@ -8,6 +8,7 @@ import {
 } from '../assets/images'
 import { Heading, Paper } from '../components'
 import { getNextIndex } from '../utils'
+import { media } from '../styles'
 
 interface State {
   index: number
@@ -71,11 +72,21 @@ export default Interview
 const Wrapper = styled.div`
   margin-bottom: 5rem;
   padding: 0 1rem;
+  ${media.desktop`
+    margin-bottom: 15rem;
+  `}
 `
 
 const InterviewHeading = styled(Heading)`
   width: 7rem;
   margin: 0 auto 6rem;
+  ${media.desktop`
+    width: 9rem;
+    font-size: 2rem;
+    &::after {
+      height: 18px;
+    }
+  `}
 `
 
 const Button = styled.button`
@@ -85,11 +96,17 @@ const Button = styled.button`
   height: 32px;
   padding-top: 32px;
   background: url(${({ backgroundUrl }: { backgroundUrl: string }) => backgroundUrl}) no-repeat;
+  background-size: cover;
   font-weight: 700;
   cursor: pointer;
   &:focus {
     outline: 2px solid ${({ theme }: { theme: { secondaryColor: string } }) => theme.secondaryColor};
   }
+  ${media.tablet`
+    width: 48px;
+    height: 48px;
+    padding-top: 48px;
+  `}
 `
 
 const RectangularPaper = styled(Paper)`
@@ -98,6 +115,10 @@ const RectangularPaper = styled(Paper)`
   flex-direction: column;
   justify-content: center;
   padding: 3rem .75rem;
+  max-width: 1000px;
+  ${media.tablet`
+    padding: 5rem 2rem;
+  `}
 `
 
 const ImageBox = styled.div`
@@ -127,6 +148,9 @@ const Paragraph = styled.p`
   text-align: center;
   line-height: 1.5;
   word-break: keep-all;
+  ${media.tablet`
+    font-size: .9rem;
+  `}
 `
 
 const Blockquote = styled.blockquote`
@@ -139,6 +163,9 @@ const Cite = styled.cite`
   margin-top: 1.5rem;
   font-size: 0.75rem;
   font-style: initial;
+  ${media.tablet`
+    font-size: .9rem;
+  `}
 `
 
 interface Interviewee {

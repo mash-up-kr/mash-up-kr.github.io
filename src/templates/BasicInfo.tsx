@@ -39,6 +39,9 @@ export default BasicInfo
 const Wrapper = styled.section`
   width: 90%;
   margin: 0 auto 4rem;
+  ${media.tablet`
+    margin: 0 auto 5rem;
+  `}
 `
 
 const Heading = styled.h2`
@@ -49,6 +52,8 @@ const InfoList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: #FFF;
+  font-weight: 500;
 `
 
 const InfoItem = styled.li`
@@ -58,8 +63,6 @@ const InfoItem = styled.li`
   width: 33.33%;
   margin-bottom: 2rem;
   padding: 0.5rem 0;
-  color: #FFF;
-  font-weight: 600;
   text-align: center;
   &:not(:nth-child(3)):not(:last-child) {
     border-right: 1px solid #FFF;
@@ -81,6 +84,9 @@ const InfoTitle = styled.h3`
     display: block;
     line-height: 1.65;
   }
+  ${media.tablet`
+    font-size: 1rem;
+  `}
 `
 
 const InfoContent = styled.p`
@@ -90,8 +96,15 @@ const InfoContent = styled.p`
 const Data = styled.data`
   font-size: 1.4rem;
   font-weight: 700;
+  ${media.tablet`
+    font-size: 1.6rem;
+    font-weight: 900;
+  `}
 `
 
 const Unit = styled.span`
   font-size: 0.7rem;
+  ${media.tablet`
+    font-size: 1rem;
+  `}
 `

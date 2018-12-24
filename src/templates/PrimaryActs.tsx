@@ -63,6 +63,13 @@ const RoundedPaper = styled(Paper)`
   padding: 2.5rem;
   border-radius: 0.6rem;
   text-align: center;
+  ${media.tablet`
+    width: 30%;
+    margin-bottom: 8rem;
+  `}
+  ${media.desktop`
+    width: 25%;
+  `}
 `
 
 const ActTitle = styled.h3`

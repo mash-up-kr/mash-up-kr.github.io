@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Heading, Paper } from '../components'
 import { crownIcon, meritIcon, visionIcon } from '../assets/images'
+import { media } from '../styles'
 
 const Goal: React.FunctionComponent = () => (
   <Wrapper>
@@ -17,32 +18,34 @@ const Goal: React.FunctionComponent = () => (
       더욱 창의적이고 새로운 IT 서비스를 세상에 선보입니다. <br />
       이를 통해 메쉬업은 더 많은 사람들에게 더 편리한 삶을 제공하고자 합니다.
     </Paragraph>
-    <RectangularPaper as="section">
-      <SubHeading>
-        <Eng lang="en">
-          <Span>Merit</Span>
-        </Eng>
-        <Kor>메쉬업의 메리트</Kor>
-      </SubHeading>
-      <Paragraph>
-        메쉬업은 함께 재능을 나누고, 소통하며 새로운 어플리케이션을 만드는 프로젝트를 진행합니다. 이와 함께, 효율적이고 체계적인 프로세스를
-        통해 IT 업계의 능력 있는 실무자로서 성장합니다.
-      </Paragraph>
-      <MeritIcon />
-    </RectangularPaper>
-    <RectangularPaper as="section">
-      <SubHeading>
-        <Eng lang="en">
-          <Span>Vision</Span>
-        </Eng>
-        <Kor>메쉬업의 궁극적인 목표</Kor>
-      </SubHeading>
-      <Paragraph>
-        메쉬업은 함께 재능을 나누고, 소통하며 새로운 어플리케이션을 만드는 프로젝트를 진행합니다. 이와 함께, 효율적이고 체계적인 프로세스를
-        통해 IT 업계의 능력 있는 실무자로서 성장합니다.
-      </Paragraph>
-      <VisionIcon />
-    </RectangularPaper>
+    <PaperGroup>
+      <RectangularPaper as="section">
+        <SubHeading>
+          <Eng lang="en">
+            <Span>Merit</Span>
+          </Eng>
+          <Kor>메쉬업의 메리트</Kor>
+        </SubHeading>
+        <Paragraph>
+          메쉬업은 함께 재능을 나누고, 소통하며 새로운 어플리케이션을 만드는 프로젝트를 진행합니다. 이와 함께, 효율적이고 체계적인
+          프로세스를 통해 IT 업계의 능력 있는 실무자로서 성장합니다.
+        </Paragraph>
+        <MeritIcon />
+      </RectangularPaper>
+      <RectangularPaper as="section">
+        <SubHeading>
+          <Eng lang="en">
+            <Span>Vision</Span>
+          </Eng>
+          <Kor>메쉬업의 궁극적인 목표</Kor>
+        </SubHeading>
+        <Paragraph>
+          메쉬업은 함께 재능을 나누고, 소통하며 새로운 어플리케이션을 만드는 프로젝트를 진행합니다. 이와 함께, 효율적이고 체계적인
+          프로세스를 통해 IT 업계의 능력 있는 실무자로서 성장합니다.
+        </Paragraph>
+        <VisionIcon />
+      </RectangularPaper>
+    </PaperGroup>
   </Wrapper>
 )
 
@@ -53,6 +56,9 @@ const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   margin-bottom: 6rem;
+  ${media.desktop`
+    margin-bottom: 15rem;
+  `}
 `
 
 const GoalHeading = styled(Heading)`
@@ -68,6 +74,13 @@ const GoalHeading = styled(Heading)`
     height: 18px;
     background: url(${crownIcon}) 50% / cover;
   }
+  ${media.desktop`
+    width: auto;
+    font-size: 2rem;
+    &::after {
+      height: 18px;
+    }
+  `}
 `
 
 const TagList = styled.ul`
@@ -93,18 +106,35 @@ const Paragraph = styled.p`
   text-align: ${({ centered }: { mragined?: boolean; centered?: boolean }) => (centered ? 'center' : 'left')};
   line-height: 1.7;
   word-break: keep-all;
+  ${media.tablet`
+    font-size: .9rem;
+  `}
+`
+
+const PaperGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  ${media.desktop`
+    flex-direction: row;
+  `}
 `
 
 const RectangularPaper = styled(Paper)`
   position: relative;
   margin: 0 1rem 1.5rem;
   padding: 1.4rem 1.75rem;
+  ${media.desktop`
+    max-width: 500px;
+  `}
 `
 
 const SubHeading = styled.h3`
   margin-bottom: 1rem;
   color: ${({ theme }) => theme.primaryColor};
   font-size: 0.9rem;
+  ${media.desktop`
+    font-size: 1.2rem;
+  `}
 `
 
 const Eng = styled.span`
@@ -123,6 +153,12 @@ const Eng = styled.span`
     background-color: ${({ theme }) => theme.secondaryColor};
     font-weight: 700;
   }
+  ${media.desktop`
+    font-size: 1.4rem;
+    &::before {
+      height: 0.8rem;
+    }
+  `}
 `
 
 const Span = styled.span`

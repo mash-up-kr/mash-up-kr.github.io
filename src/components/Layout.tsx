@@ -26,7 +26,9 @@ const Layout: React.FunctionComponent<Props> = ({
 
 export default Layout
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  max-width: 1920px;
+`
 
 const Header = styled.div``
 
